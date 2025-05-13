@@ -55,11 +55,32 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
+
+.welcome-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px; /* limit image height */
+    display: block;
+}
+
+.welcome-banner {
+    width: 100%;
+    background-color: #ad9f90; /* or whatever background you like */
+    text-align: center;
+    padding: 0; /* remove vertical padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 /* -------------------------------------------------------------- */
 
 p,
 div {
-    color: #000000;
+    /* color: #000000; */
+    color: #000000
 
 }
 
@@ -69,7 +90,10 @@ div {
     /*creates spacing from the edge*/
 }
 
+
+
 .section-title {
+    
     font-size: 2rem;
     /* Make the text larger */
     font-weight: bold;
@@ -90,10 +114,15 @@ h3 {
 
 
 .neon-text {
+
+    /* color: #ffffff;
+    text-shadow: 0 0 20px #000000; */
+
     color: #ff6c6c;
     text-shadow:
         0 0 20px #411a1a;
 }
+
 
 .logo {
     color: #9a4c4c;
@@ -110,7 +139,6 @@ h3 {
 nav a {
     color: #9a4c4c;
     text-decoration: none;
-    /* text-shadow: 0 0 20px #27411a; */
     font-weight: bold;
     font-size: 20px;
     display: inline-block;
@@ -118,9 +146,8 @@ nav a {
     border-radius: 10px;
 
 }
-
+/* ---------------------- border/tabs ------------------------- */
 nav {
-
     position: sticky;
     top: 0;
     background-color: #f5e3d8;
@@ -128,19 +155,7 @@ nav {
     border-top: 2px solid #7b2e2e;
     border-bottom: 2px solid #7b2e2e;
     z-index: 1000;
-    /* 
-    background-color: #f5e3d8;
-    padding: 15px 0;
-    border-top: 2px solid #7b2e2e;
-    border-bottom: 2px solid #7b2e2e;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-top: 20px;
-
-
-    position: sticky;
-    top: 0;
-    z-index: 1000; */
+    
 }
 
 
@@ -148,8 +163,11 @@ nav {
     margin-top: 10px;
 }
 
+
+
 nav,
 .bible-verse {
+
     text-align: center;
     display: block;
     font-size: 18px;
@@ -161,6 +179,8 @@ nav,
         0 0 5ox #000000,
         0 0 20px #000000;
 }
+
+
 
 .bible-reference {
     font-size: 14px;
@@ -202,6 +222,8 @@ nav,
     font-size: 16px;
 
 }
+
+
 
 .sub {
     display: block;
