@@ -28,6 +28,9 @@ li {
     /* ensures no extra spacing between list items */
 }
 
+
+
+
 /* -------------------------- IMAGES -------------------------- */
 .spiritualSurvey img, .perspectiveCards img, .snapshot img {
     width: 650px;
@@ -224,13 +227,12 @@ nav,
 }
 
 
-
 .sub {
     display: block;
     text-align: center;
     color: #411a1a;
     text-decoration: double;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .center-font {
