@@ -3,11 +3,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body1 {
-    /* background-color: #ce776a; */
-    text-align: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 br {
     text-align: left;
@@ -67,14 +62,23 @@ li {
 }
 
 .welcome-banner {
-    width: 100%;
+    width: calc(100% + 60px);
     background-color: #ad9f90; /* or whatever background you like */
     text-align: center;
     padding: 0; /* remove vertical padding */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -30px;
+    margin-right: -30px;
+}
 
+.TGIF-Banner-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px; /* limit image height */
+    display: block;
+    text-align: center;
 }
 
 
@@ -87,10 +91,9 @@ div {
 
 }
 
-.section p {
-    text-align: left;
-    margin-left: 30px;
-    /*creates spacing from the edge*/
+.section /*p*/ {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
@@ -205,6 +208,9 @@ nav,
     display: none;
 }
 
+
+/* ---------------------- Section ------------------------- */
+
 .active[data-tab-content] {
     display: block;
 }
@@ -226,6 +232,7 @@ nav,
 
 }
 
+/* ---------------------- fonts and subheading ------------------------- */
 
 .sub {
     display: block;
