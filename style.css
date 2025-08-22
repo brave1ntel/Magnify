@@ -29,7 +29,7 @@ li {
 
 
 /* -------------------------- IMAGES -------------------------- */
-.spiritualSurvey img, .perspectiveCards img, .snapshot img, .Apologetics45OnlineFlier img {
+.spiritualSurvey img, .perspectiveCards img, .snapshot img {
     width: 100%;
     max-width: 650px;
     height: auto;
@@ -48,15 +48,15 @@ li {
 } */
 
 .welcome-img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
-    max-height: 500px; /* limit image height */
+    max-height: 60%; /* limit image height */
     display: block;
 }
 
 .welcome-banner {
     width: calc(100% + 60px);
-    background-color: #ad9f90; /* or whatever background you like */
+    /* background-color: #ad9f90; */
     text-align: center;
     padding: 0; /* remove vertical padding */
     display: flex;
@@ -172,6 +172,8 @@ nav {
     border-top: 2px solid #7b2e2e;
     border-bottom: 2px solid #7b2e2e;
     z-index: 1000;
+    overflow-x: auto;
+    white-space: nowrap;
 
     
 }
@@ -251,7 +253,7 @@ nav,
     text-align: center;
     color: #411a1a;
     text-decoration: double;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .center-font {
@@ -264,7 +266,7 @@ nav,
 
 
 
-/* ------------------------------For Mobile Users---------------------------------------- */
+/* ------------------------------For Desktop Users---------------------------------------- */
 
 
 /* APOLOGIA SECTION */
@@ -284,4 +286,55 @@ nav,
 
 .center {
     text-align: center;
+}
+
+
+
+
+/* Desktop-only refinements */
+@media (min-width: 900px) {
+
+  /* 1) Narrow the reading width and center the block */
+  #GoCommission.section {
+    max-width: 70ch;         /* comfy line length */
+    margin: 40px auto;       /* centers the section on the page */
+    padding: 0 16px;
+  }
+
+  /* 2) Left-align body copy on desktop (keep headings centered) */
+  #GoCommission p,
+  #GoCommission li,
+  #GoCommission dl,
+  #GoCommission .text-font-size {
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  #about p {
+    text-align: left;
+    line-height: 1.6;
+
+    max-width: 85ch;         /* comfy line length */
+    margin: 40px auto;       /* centers the section on the page */
+    padding: 0 16px;
+  }
+
+  #resources p {
+    max-width: 85ch;
+    margin: 50px auto;       /* centers the section on the page */
+    padding: 0 16px;
+  }
+
+  /* You used .center on many <p> tags; override those ONLY on desktop */
+  #GoCommission p.center { text-align: left; }
+
+  /* Keep verse/section titles centered */
+  #GoCommission .section-title,
+  #GoCommission .sub,
+  #GoCommission .bible-verse,
+  #GoCommission .center-font { text-align: center; }
+
+  /* 3) Tidy up vertical rhythm */
+  #GoCommission .section-title { margin: 0 0 8px; }
+  #GoCommission .description-title { margin: 18px 0 8px; }
 }
