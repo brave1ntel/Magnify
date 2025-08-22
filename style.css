@@ -47,12 +47,25 @@ li {
     margin-right: auto;
 } */
 
+
 .welcome-img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
-    max-height: 60%; /* limit image height */
+    /* max-height: 60%; limit image height */
     display: block;
+    margin: 0 auto;
 }
+
+@media (min-width: 900px) {
+    .welcome-img {
+        max-width: 60%;
+        height: auto;
+    /* max-height: 60%; */
+    /* display: block; */
+    }
+}
+
+
 
 .welcome-banner {
     width: calc(100% + 60px);
